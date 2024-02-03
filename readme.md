@@ -3,11 +3,11 @@
 **Build & Install dependencies**
 
 ```
-xmake build <core|graph>
+xmake build
 ```
 
-**xmake Run Module**
+**xmake Run**
 
 ```
-xmake run <core|graph>
+xmake run
 ```
