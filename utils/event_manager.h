@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 #include <algorithm>
 #include <vector>
 #include <map>
@@ -8,9 +9,8 @@ class EventManager {
         std::map<std::string, std::vector<void (*)(int)>> events;
 
     public:
-        EventManager() {}
+        EventManager();
 
         EventManager *on(std::string event_name, void (*callback)(int));
-
         bool emit(std::string event_name, int arg);
-}
+};
